@@ -4,10 +4,82 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Websites by Dessoy</title>
+  <meta name="description" content="Placeholder home page for Websites by Dessoy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&family=Libre+Caslon+Text:ital@1&family=Sorts+Mill+Goudy&display=swap">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <main><h1>Websites by Dessoy</h1><p>Coming soon.</p></main>
+  <header class="topbar">
+    <nav class="left" aria-label="Sites">
+      <a href="./" aria-current="page">Home</a>
+      <a href="https://www.marktaylor82.com" target="_blank" rel="noopener">Mark Taylor</a>
+      <a href="https://dessoyracing.com" target="_blank" rel="noopener">Dessoy Racing</a>
+    </nav>
+    <a class="brand" href="./">Dessoy</a>
+    <nav class="right" aria-label="Pages">
+      <a href="#contact" data-open-contact>Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="wordmark">Dessoy</h1>
+    <p class="tagline">Designed to be seen. Built to be found.</p>
+    <p class="sub">Fast loading, mobile-ready, search-optimised and secure. All set up before launch.</p>
+    <a class="btn" href="#contact" data-open-contact>Start a conversation</a>
+  </section>
+
+  <main>
+    <section class="project reveal">
+      <div class="project-head">
+        <h2>Mark Taylor</h2>
+        <span class="hl">Two-time British Champion. Now the F900R.</span>
+      </div>
+      <a class="card card-logo" href="https://www.marktaylor82.com" target="_blank" rel="noopener" aria-label="Visit Mark Taylor">
+        <img src="assets/images/mark-taylor/MT82-logo-1109.png" width="1109" height="1109" alt="MT82 logo" loading="lazy">
+      </a>
+      <div class="project-foot">
+        <p>2025 and 2026 British Lansdowne Classic 500cc champion, a ten-time title winner and ACU instructor, stepping up to the British BMW F900R Championship.</p>
+        <a class="btn" href="https://www.marktaylor82.com" target="_blank" rel="noopener">Visit site</a>
+      </div>
+    </section>
+
+    <section class="project reveal">
+      <div class="project-head">
+        <h2>Dessoy Racing</h2>
+        <span class="hl">Young, fast, and just getting started. Lean. Commit. Repeat.</span>
+      </div>
+      <a class="card card-photo" href="https://dessoyracing.com" target="_blank" rel="noopener" aria-label="Visit Dessoy Racing">
+        <img src="assets/images/dessoy-racing/dessoy-racing-podium.jpg" width="1125" height="2000" alt="Smiling rider on the podium holding a trophy" loading="lazy">
+      </a>
+      <div class="project-foot">
+        <p>Dessoy Racing follows Harrison Dessoy’s journey in the FIM World Sportbike Championship, and the News section is where you’ll find every result, update and announcement first.</p>
+        <a class="btn" href="https://dessoyracing.com" target="_blank" rel="noopener">Visit site</a>
+      </div>
+    </section>
+
+    <section class="contact reveal" id="contact">
+      <h2>Let’s begin</h2>
+      <p class="contact-lead">Every project starts with a conversation. Write to me and we’ll shape it together.</p>
+      <a class="btn" href="mailto:robert@dessoyracing.com">Start a conversation</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; Dessoy</p>
+  </footer>
+
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title" aria-describedby="contact-desc">
+    <h2 id="contact-title">Let’s begin</h2>
+    <p id="contact-desc">Every project starts with a conversation. Write to me and we’ll shape it together.</p>
+    <div class="dialog-actions">
+      <a class="btn" href="mailto:robert@dessoyracing.com">Start a conversation</a>
+      <button class="btn btn-ghost" type="button" data-close-contact>Close</button>
+    </div>
+    <button class="dialog-x" type="button" data-close-contact aria-label="Close dialog">&times;</button>
+  </dialog>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
